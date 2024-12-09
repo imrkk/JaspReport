@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="demo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8595d647-5b20-4b59-89ec-d6fc466f6ad1">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="city" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="81" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-20" y="0" width="595" height="81" backcolor="#DB6765" uuid="5819d867-147d-4745-839b-f7f88f8090c0"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="120" y="20" width="261" height="51" uuid="a1db3c7e-7947-4db9-8aed-d400de9f6683"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UNI STATUS]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="440" y="20" width="121" height="31" uuid="76eebf1b-3896-41b3-bd32-1256aea6751e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="267" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="19" width="200" height="31" uuid="a71de258-cbcb-4d26-9643-73e03bb0a3da"/>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ NAME :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="19" width="201" height="31" uuid="e55cee81-db59-4eba-9e31-8dbba9e9e0a8"/>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-20" y="49" width="201" height="31" uuid="f475693c-8fac-445e-9152-a4ea1c7e0d1d"/>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ CITY :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="49" width="201" height="31" uuid="568176b9-0c41-4de0-bf91-d13c4d89214c"/>
+				<box>
+					<pen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{city}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
